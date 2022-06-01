@@ -9,6 +9,8 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: $bg-primary;
+  color: $text-color;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,6 +19,5 @@ a {
 }
 
 main {
-  height: 90vh;
   margin-right: $sidebar-width;
 }
