@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.skill--wrapper {
+      margin: 1em 0;
+      height: 5em;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+.skill--header {
+      display: flex;
+      align-items: flex-end;
+      gap: 1em;
+      padding-inline: 1em;
+
+      svg {
+            font-size: 1.5em;
+      }
+
+      h2 {
+            transform: translateY(.134em);
+            font-size: 1.5em;
+      }
+
+      p {
+            font-weight: 200;
+            font-size: .92em;
+      }
+}
+
+.skill--body {
+      height: 12%;
+      width: 100%;
+      border-radius: 1em;
+      border: .2em solid $bg-tertiary;
+}
+
+.skill-percentage {
+      height: 100%;
+      border-radius: 1em;
+      background-color: rgba(240, 239, 239, 0.859);
+}

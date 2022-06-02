@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/about-section.scss'
+import '../styles/components/about-section.scss'
 
 export default function AboutSection(){
       return (

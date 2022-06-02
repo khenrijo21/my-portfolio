@@ -20,4 +20,9 @@ a {
 
 main {
   margin-right: $sidebar-width;
+
+  section {
+    height: 100vh;
+    padding: 2em 5em;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faListCheck, faDiagramProject, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import '../styles/navbar.scss'
+import '../styles/components/navbar.scss'
 
 export default function Navbar(){
       return (
