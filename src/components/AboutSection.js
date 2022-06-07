@@ -1,11 +1,11 @@
 import React from "react";
 import '../styles/components/about-section.scss'
-import { FaGithub, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaArrowDown } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 
 export default function AboutSection(){
       return (
-            <section className="about--wrapper">
+            <section id="about" className="about--wrapper">
                   <div className="about--info">
                         <h4 className="about-title">Presentation</h4>
                         <h1 className="about-name">Kouassi Kan Yves Henri Joel</h1>
@@ -22,6 +22,12 @@ export default function AboutSection(){
                   <div className="about--illustration">
                         <span className="animated-letter">H</span>
                         <span className="animated-letter">J</span>
+                  </div>
+                  <div className="know-more">
+                        <a href="#skills">
+                              En savoir plus <br />
+                              <FaArrowDown />
+                        </a>
                   </div>
             </section>
       )

@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.skill--wrapper {
+.skill {
       margin: 1em 0;
       height: 5em;
       width: 100%;
@@ -42,4 +42,15 @@
       height: 100%;
       border-radius: 1em;
       background-color: rgba(240, 239, 239, 0.859);
+      transform-origin: left 50%;
+      animation: left-to-right 2s 0s forwards;
+}
+
+@keyframes left-to-right {
+      from {
+            transform: scaleX(0);
+      }
+      to {
+            transform: scaleX(1);
+      }
 }

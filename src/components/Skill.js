@@ -7,10 +7,8 @@ import '../styles/components/skill.scss'
 export default function Skill({icon, title, desc, percentage}){
       const style = {width: percentage + '%'}
 
-      console.log(icon)
-
       return (
-            <div className="skill--wrapper">
+            <div className="skill">
                   <div className="skill--header">
                         {title === "Flutter" ? <SiFlutter /> :  <FontAwesomeIcon icon={icon} />}
                         <h2>{title}</h2>

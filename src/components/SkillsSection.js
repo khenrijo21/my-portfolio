@@ -54,7 +54,7 @@ export default function SkillsSection(){
       ]
 
       return (
-            <section className="skills--wrapper">
+            <section id="skills" className="skills--wrapper">
                   <h1 className="skills-title">Skills <GiSkills /> </h1>
                   <div className="skills--body">
                         {skills.map((skill, index) => {

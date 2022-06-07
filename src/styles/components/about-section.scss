@@ -16,6 +16,7 @@
 
 .about-title {
       font-weight: 300;
+      color: gray;
 }
 
 .about-name {
@@ -27,43 +28,10 @@
       gap: 1em;
 
       svg {
-            transform: translateY(.1em);
-            margin-inline: .1em;
+            transform: translateY(0.1em);
+            margin-inline: 0.1em;
       }
 }
-
-// .know-more {
-//       border: 0.2em solid $bg-secondary;
-//       padding: 0.5em 2.5em;
-//       color: white;
-//       font-size: 0.8em;
-//       position: relative;
-
-//       box-shadow: 0em 0.3125em 0.625em 0em rgba(0, 0, 0, 0.5);
-//       transition: all ease 0.2s;
-
-//       &::after {
-//             content: "";
-//             position: absolute;
-//             top: 0;
-//             right: 0;
-//             left: 0;
-//             bottom: 0;
-//             z-index: -5;
-//             opacity: 0;
-//             background-color: $bg-secondary;
-//             transition: opacity 0.2s;
-//       }
-
-//       &:hover {
-//             transform: translateY(-0.3125em);
-//             box-shadow: 0em 0.625em 1.25em 0.125em rgba(0, 0, 0, 0.25);
-
-//             &::after {
-//                   opacity: 1;
-//             }
-//       }
-// }
 
 .about--illustration {
       font-family: "Dancing Script", cursive;
@@ -72,13 +40,46 @@
       transform: translateY(-9em);
       text-shadow: 0.2em 0.4em 0.125em $bg-tertiary;
       transition: all 0.3s;
-
+      animation: illustration-animation 5s infinite;
+      
       &:hover {
-            transform: translateY(-9.5em);
+            animation-play-state: paused;   
             text-shadow: 0.3em 0.6em 0.504em $bg-tertiary;
       }
 }
 
 .animated-letter {
       font-size: 25em;
+}
+
+.know-more {
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      transform: translateY(-150%);
+
+      svg {
+            margin-top: 0.5em;
+            animation: up-down-animation 2s infinite;
+      }
+}
+
+@keyframes illustration-animation {
+      0%,
+      100% {
+            transform: translateY(-9em);
+      }
+      50% {
+            transform: translateY(-5em) scale(0.8);
+      }
+}
+
+@keyframes up-down-animation {
+      0%,
+      100% {
+            transform: translateY(10%);
+      }
+      50% {
+            transform: translateY(-40%);
+      }
 }
