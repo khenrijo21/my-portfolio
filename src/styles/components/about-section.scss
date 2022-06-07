@@ -22,38 +22,48 @@
       font-size: 2.5em;
 }
 
-.know-more {
-      border: 0.2em solid $bg-secondary;
-      padding: 0.5em 2.5em;
-      color: white;
-      font-size: 0.8em;
-      position: relative;
+.about--socials {
+      display: flex;
+      gap: 1em;
 
-      box-shadow: 0em 0.3125em 0.625em 0em rgba(0, 0, 0, 0.5);
-      transition: all ease 0.2s;
-
-      &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            z-index: -5;
-            opacity: 0;
-            background-color: $bg-secondary;
-            transition: opacity 0.2s;
-      }
-
-      &:hover {
-            transform: translateY(-0.3125em);
-            box-shadow: 0em 0.625em 1.25em 0.125em rgba(0, 0, 0, 0.25);
-
-            &::after {
-                  opacity: 1;
-            }
+      svg {
+            transform: translateY(.1em);
+            margin-inline: .1em;
       }
 }
+
+// .know-more {
+//       border: 0.2em solid $bg-secondary;
+//       padding: 0.5em 2.5em;
+//       color: white;
+//       font-size: 0.8em;
+//       position: relative;
+
+//       box-shadow: 0em 0.3125em 0.625em 0em rgba(0, 0, 0, 0.5);
+//       transition: all ease 0.2s;
+
+//       &::after {
+//             content: "";
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             left: 0;
+//             bottom: 0;
+//             z-index: -5;
+//             opacity: 0;
+//             background-color: $bg-secondary;
+//             transition: opacity 0.2s;
+//       }
+
+//       &:hover {
+//             transform: translateY(-0.3125em);
+//             box-shadow: 0em 0.625em 1.25em 0.125em rgba(0, 0, 0, 0.25);
+
+//             &::after {
+//                   opacity: 1;
+//             }
+//       }
+// }
 
 .about--illustration {
       font-family: "Dancing Script", cursive;
