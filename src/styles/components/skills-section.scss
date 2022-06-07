@@ -10,6 +10,10 @@
 .skills-title {
       font-size: 2.5em;
       margin-top: 1em;
+
+      svg {
+            transform: translateY(.1em);
+      }
 }
 
 .skills--body {
