@@ -5,9 +5,7 @@ import '../styles/components/footer.scss'
 export default function Footer(){
       return (
             <footer>
-                  <p>Copyright &copy; 2022 -
-                        <a href="https://www.inputstudio.co" target="_blank" rel="noreferrer"> Input Studio</a>
-                  </p>
+                  <p>&copy; Copyright 2022 - All rights reserved.</p>
             </footer>
       )
 }

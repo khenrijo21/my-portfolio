@@ -3,14 +3,39 @@
 
 .about--wrapper {
       display: flex;
-      justify-content: space-around;
       align-items: center;
+      flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+      }
+
+      @media screen and (min-width: 768px) {
+            justify-content: center;
+      }
+}
+
+.about--left{
+      margin-bottom: 3em;
+
+      @media screen and (min-width: 768px) {
+            display: flex;
+      }
 }
 
 .about--info {
-      width: 65%;
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+      }
+      @media screen and (min-width: 768px) {
+            width: 65%;
+      }
+
       gap: 1.5em;
 }
 
@@ -19,12 +44,17 @@
       color: gray;
 }
 
+.about--desc {
+      line-height: 1.5em;
+}
+
 .about-name {
       font-size: 2.5em;
 }
 
 .about--socials {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
       gap: 1em;
 
       svg {
@@ -34,17 +64,23 @@
 }
 
 .about--illustration {
-      font-family: "Dancing Script", cursive;
-      height: 20em;
-      width: 35%;
-      transform: translateY(-9em);
-      text-shadow: 0.2em 0.4em 0.125em $bg-tertiary;
-      transition: all 0.3s;
-      animation: illustration-animation 5s infinite;
-      
-      &:hover {
-            animation-play-state: paused;   
-            text-shadow: 0.3em 0.6em 0.504em $bg-tertiary;
+      @media screen and (max-width: 768px) {
+            display: none;
+      }
+
+      @media screen and (min-width: 768px) {
+            font-family: "Dancing Script", cursive;
+            height: 20em;
+            width: 35%;
+            transform: translateY(-9em);
+            text-shadow: 0.2em 0.4em 0.125em $bg-tertiary;
+            transition: all 0.3s;
+            animation: illustration-animation 5s infinite;
+
+            &:hover {
+                  animation-play-state: paused;
+                  text-shadow: 0.3em 0.6em 0.504em $bg-tertiary;
+            }
       }
 }
 
@@ -53,10 +89,7 @@
 }
 
 .know-more {
-      position: absolute;
       text-align: center;
-      bottom: 0;
-      transform: translateY(-150%);
 
       svg {
             margin-top: 0.5em;

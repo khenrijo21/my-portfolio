@@ -5,6 +5,7 @@
       flex-direction: column;
       align-items: center;
       gap: 3em;
+      width: 100%;
 }
 
 .skills-title {
@@ -14,6 +15,12 @@
       svg {
             transform: translateY(.1em);
       }
+}
+
+.skills-desc {
+      text-align: center;
+      font-style: italic;
+      color: gray;
 }
 
 .skills--body {

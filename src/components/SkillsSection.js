@@ -54,8 +54,13 @@ export default function SkillsSection(){
       ]
 
       return (
-            <section id="skills" className="skills--wrapper">
+            <section id="skills" className="wrapper skills--wrapper">
                   <h1 className="skills-title">Skills <GiSkills /> </h1>
+                  
+                  <p className="skills-desc">
+                        Each bar represents approximately the percentage of knowledge I have in building an application with the quoted language / tool based on a purely subjective estimation.
+                  </p>
+
                   <div className="skills--body">
                         {skills.map((skill, index) => {
                               return (

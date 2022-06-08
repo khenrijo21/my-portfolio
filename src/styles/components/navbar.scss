@@ -1,18 +1,30 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .sidebar {
-      width: $sidebar-width;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2.5em;
       z-index: 100;
       position: fixed;
-      padding: 2em;
-      top: 0;
-      right: 0;
-      bottom: 0;
+
+      @media screen and (max-width: 768px) {
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding: 1.5em;
+      }
+
+      @media screen and (min-width: 768px) {
+            width: $sidebar-width;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2em;
+      }
+
       background-color: $bg-secondary;
 
       svg {
@@ -27,6 +39,6 @@
 
 .active {
       svg {
-            color : $bg-primary;
+            color: $bg-primary;
       }
 }

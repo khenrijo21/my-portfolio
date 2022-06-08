@@ -10,8 +10,11 @@ export default function Skill({icon, title, desc, percentage}){
       return (
             <div className="skill">
                   <div className="skill--header">
-                        {title === "Flutter" ? <SiFlutter /> :  <FontAwesomeIcon icon={icon} />}
-                        <h2>{title}</h2>
+                        <div>
+                              {title === "Flutter" ? <SiFlutter /> :  <FontAwesomeIcon icon={icon} />}
+                              <h2>{title}</h2>
+                        </div>
+                        
                         <p>{desc}</p>
                   </div>
                   <div className="skill--body">

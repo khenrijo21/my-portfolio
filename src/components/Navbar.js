@@ -5,6 +5,7 @@ import { faHome, faListCheck, faDiagramProject, faPaperPlane } from "@fortawesom
 import '../styles/components/navbar.scss'
 
 export default function Navbar(){
+
       return (
             <navbar className="sidebar">
                   <a href="/" className="sidebar-link active">
