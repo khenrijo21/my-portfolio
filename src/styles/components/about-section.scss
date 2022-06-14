@@ -46,6 +46,26 @@
 
 .about--desc {
       line-height: 1.5em;
+
+      span {
+            &:nth-child(1){
+                  color: orange;
+            }
+
+            &:nth-child(2){
+                  color: green;
+            }
+      }
+
+      a {
+            font-weight: bold;
+            font-style: italic;
+            transition: color .2s;
+
+            &:hover {
+                  color: $bg-tertiary;
+            }
+      }
 }
 
 .about-name {

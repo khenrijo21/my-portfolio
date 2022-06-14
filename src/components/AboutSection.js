@@ -12,7 +12,7 @@ export default function AboutSection(){
                               <h1 className="about-name">Kouassi Kan Yves Henri Joel</h1>
                               <div className="about--desc">
                                     <p>
-                                          Full-stack and mobile developer, modern day vampire (because I work mostly at night), passionate about computers, new technologies, astronomy, sports and co-founder of Input Studio. I am always looking for new challenges in order to improve my skills and become the best version of myself. <br />
+                                          Full-stack and mobile developer from <span>Côte</span> d'<span>Ivoire</span>, co-founder of <a href='https://inputstudio.co/' target='_blank' rel='noopenner noreferrer'>Input Studio</a>, modern day vampire (because I work mostly from midnight to dawn), passionate about computers, new technologies, astronomy, sports and co-founder of Input Studio. I am always looking for new challenges in order to improve my skills and become the best version of myself. <br />
                                           Are you looking for something? Maybe I can help you? <br />
                                           Contact me.
                                     </p>
