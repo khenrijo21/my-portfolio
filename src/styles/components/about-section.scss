@@ -59,7 +59,6 @@
 
       a {
             font-weight: bold;
-            font-style: italic;
             transition: color .2s;
 
             &:hover {
@@ -76,6 +75,14 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, 1fr);
       gap: 1em;
+
+      a {
+            transition: color .3s;
+
+            &:hover {
+                  color: $bg-tertiary;
+            }
+      }
 
       svg {
             transform: translateY(0.1em);
