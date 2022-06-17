@@ -14,7 +14,7 @@
       }
 }
 
-.skill--header {
+.skill__header {
       display: flex;
 
       @media screen and (max-width: 768px) {
@@ -50,7 +50,7 @@
       }
 }
 
-.skill--body {
+.skill__body {
       height: .6em;
       width: 100%;
       border-radius: 1em;

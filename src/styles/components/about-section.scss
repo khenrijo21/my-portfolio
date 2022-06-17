@@ -1,7 +1,7 @@
 @import "../variables.scss";
 @import "../fonts.scss";
 
-.about--wrapper {
+.about__wrapper {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -16,7 +16,7 @@
       }
 }
 
-.about--left{
+.about__left{
       margin-bottom: 3em;
 
       @media screen and (min-width: 768px) {
@@ -24,7 +24,7 @@
       }
 }
 
-.about--info {
+.about__info {
       display: flex;
       flex-direction: column;
 
@@ -44,7 +44,7 @@
       color: gray;
 }
 
-.about--desc {
+.about__desc {
       line-height: 1.5em;
 
       span {
@@ -72,7 +72,7 @@
       font-size: 2.5em;
 }
 
-.about--socials {
+.about__socials {
       display: grid;
       grid-template-columns: repeat(auto-fit, 1fr);
       gap: 1em;
@@ -83,7 +83,7 @@
       }
 }
 
-.about--illustration {
+.about__illustration {
       @media screen and (max-width: 768px) {
             display: none;
       }
