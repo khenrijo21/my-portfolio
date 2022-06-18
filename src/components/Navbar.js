@@ -11,7 +11,7 @@ import "../styles/components/navbar.scss";
 
 export default function Navbar() {
   return (
-    <navbar className="sidebar">
+    <nav className="sidebar">
       <a id="home" href="/" className="sidebar-link">
         <FontAwesomeIcon size="xl" icon={faHome} />
       </a>
@@ -24,6 +24,6 @@ export default function Navbar() {
       <a id="contact" href="/" className="sidebar-link">
         <FontAwesomeIcon size="xl" icon={faPaperPlane} />
       </a>
-    </navbar>
+    </nav>
   );
 }
