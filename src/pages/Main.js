@@ -10,12 +10,13 @@ export default function Main() {
     const changeMenuActive = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          
-          if(entry.target.classList.contains('about__wrapper')){
-            menus[0].classList.add('active')
-          }
-          else if(entry.target.classList.contains('skills__wrapper')){
-            menus[1].classList.add('active')
+          const currentMenu = document.querySelectorAll(".active");
+          currentMenu.forEach(element => element.classList.remove('active'))
+
+          if (entry.target.classList.contains("about__wrapper")) {
+            menus[0].classList.add("active");
+          } else if (entry.target.classList.contains("skills__wrapper")) {
+            menus[1].classList.add("active");
           }
         }
       });
@@ -29,8 +30,7 @@ export default function Main() {
     const observer = new IntersectionObserver(changeMenuActive, options);
     wrappers.forEach((wrapper) => {
       observer.observe(wrapper);
-    })
-    
+    });
   }, []);
   return (
     <main>
