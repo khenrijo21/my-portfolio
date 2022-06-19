@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AboutSection from "../components/AboutSection";
+import RealisationSection from "../components/RealisationSection";
 import SkillsSection from "../components/SkillsSection";
 
 export default function Main() {
@@ -11,12 +12,14 @@ export default function Main() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const currentMenu = document.querySelectorAll(".active");
-          currentMenu.forEach(element => element.classList.remove('active'))
+          currentMenu.forEach((element) => element.classList.remove("active"));
 
           if (entry.target.classList.contains("about__wrapper")) {
             menus[0].classList.add("active");
           } else if (entry.target.classList.contains("skills__wrapper")) {
             menus[1].classList.add("active");
+          } else if (entry.target.classList.contains("realisations__wrapper")) {
+            menus[2].classList.add("active");
           }
         }
       });
@@ -36,6 +39,7 @@ export default function Main() {
     <main>
       <AboutSection />
       <SkillsSection />
+      <RealisationSection />
     </main>
   );
 }

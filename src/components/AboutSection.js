@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="wrapper about__wrapper">
+    <section className="wrapper about__wrapper">
       <div className="about__left">
         <div className="about__info">
           <h4 className="about-title">Presentation</h4>
@@ -39,8 +39,8 @@ export default function AboutSection() {
             >
               <FaGithub /> khenrijo21
             </a>
-            <a href="/" className="social" target="_blank" rel="noreferrer">
-              <FaLinkedin /> Linkedin
+            <a href="https://www.linkedin.com/in/henri-joel-kouassi-39636723a" className="social" target="_blank" rel="noreferrer">
+              <FaLinkedin /> Kouassi Henri Joel
             </a>
             <a href="mailto:khenrijo21@gmail.com" className="social">
               <AiOutlineMail /> khenrijo21@gmail.com

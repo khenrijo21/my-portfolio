@@ -4,7 +4,6 @@ import {
   faHome,
   faListCheck,
   faDiagramProject,
-  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/components/navbar.scss";
@@ -20,9 +19,6 @@ export default function Navbar() {
       </a>
       <a id="realisations" href="/" className="sidebar-link">
         <FontAwesomeIcon size="xl" icon={faListCheck} />
-      </a>
-      <a id="contact" href="/" className="sidebar-link">
-        <FontAwesomeIcon size="xl" icon={faPaperPlane} />
       </a>
     </nav>
   );

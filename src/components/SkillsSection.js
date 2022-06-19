@@ -59,9 +59,9 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="wrapper skills__wrapper">
+    <section className="wrapper skills__wrapper">
       <h1 className="skills-title">
-        Skills <GiSkills />{" "}
+        Skills <GiSkills />
       </h1>
 
       <p className="skills-desc">

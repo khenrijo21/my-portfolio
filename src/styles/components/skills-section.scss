@@ -1,28 +1,28 @@
 @import "../variables.scss";
 
 .skills__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3em;
-      width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
 }
 
 .skills-title {
-      font-size: 2.5em;
-      margin-top: 1em;
+  font-size: 2.5em;
+  margin-top: 1em;
 
-      svg {
-            transform: translateY(.1em);
-      }
+  svg {
+    transform: translateY(0.1em);
+  }
 }
 
 .skills-desc {
-      text-align: center;
-      font-size: .9em;
-      color: gray;
+  text-align: center;
+  font-size: 0.9em;
+  color: gray;
 }
 
 .skills__body {
-      width: 100%;
+  width: 100%;
 }
