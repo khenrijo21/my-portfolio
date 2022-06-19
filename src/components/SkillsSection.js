@@ -60,11 +60,11 @@ export default function SkillsSection() {
 
   return (
     <section className="wrapper skills__wrapper">
-      <h1 className="skills-title">
+      <h1 className="skills__title">
         Skills <GiSkills />
       </h1>
 
-      <p className="skills-desc">
+      <p className="skills__desc">
         Each bar represents approximately the percentage of knowledge I have in
         building an application with the quoted language / tool based on a
         purely subjective estimation.
