@@ -13,7 +13,7 @@ export default function AchievementsSection() {
     },
   ];
   return (
-    <section className="wrapper achievements__wrapper">
+    <section id="achievements" className="wrapper achievements__wrapper">
       <h1 className="achievements__title">
         Achievements <GiAchievement />{" "}
       </h1>

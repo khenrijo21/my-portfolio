@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHome,
+  faUser,
   faListCheck,
   faDiagramProject,
 } from "@fortawesome/free-solid-svg-icons";
@@ -11,13 +11,13 @@ import "../styles/components/navbar.scss";
 export default function Navbar() {
   return (
     <nav className="sidebar">
-      <a id="home" href="/" className="sidebar-link">
-        <FontAwesomeIcon size="xl" icon={faHome} />
+      <a href="#about" className="sidebar-link">
+        <FontAwesomeIcon size="xl" icon={faUser} />
       </a>
-      <a id="skills" href="/" className="sidebar-link">
+      <a href="#skills" className="sidebar-link">
         <FontAwesomeIcon size="xl" icon={faDiagramProject} />
       </a>
-      <a id="realisations" href="/" className="sidebar-link">
+      <a href="#achievements" className="sidebar-link">
         <FontAwesomeIcon size="xl" icon={faListCheck} />
       </a>
     </nav>

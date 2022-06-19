@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export default function AboutSection() {
   return (
-    <section className="wrapper about__wrapper">
+    <section id="about" className="wrapper about__wrapper">
       <div className="about__left">
         <div className="about__info">
           <h4 className="about-title">Presentation</h4>

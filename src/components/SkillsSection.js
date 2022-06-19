@@ -59,7 +59,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="wrapper skills__wrapper">
+    <section id="skills" className="wrapper skills__wrapper">
       <h1 className="skills__title">
         Skills <GiSkills />
       </h1>
