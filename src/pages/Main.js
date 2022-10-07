@@ -6,21 +6,24 @@ import SkillsSection from "../components/SkillsSection";
 export default function Main() {
   useEffect(() => {
     const wrappers = document.querySelectorAll(".wrapper");
-    const menus = document.querySelectorAll(".sidebar-link");
 
     const changeMenuActive = (entries) => {
       entries.forEach((entry) => {
+        // If the user is in a specific section
         if (entry.isIntersecting) {
+          // Get the current active menu
           const currentMenu = document.querySelectorAll(".active");
-          currentMenu.forEach((element) => element.classList.remove("active"));
 
-          if (entry.target.classList.contains("about__wrapper")) {
-            menus[0].classList.add("active");
-          } else if (entry.target.classList.contains("skills__wrapper")) {
-            menus[1].classList.add("active");
-          } else if (entry.target.classList.contains("achievements__wrapper")) {
-            menus[2].classList.add("active");
-          }
+          // Remove active class from the previous menu link
+          currentMenu.classList.remove("active");
+
+          // Get the new menu link which corresponds to the active section using his id attribute
+          const newMenu = document.querySelector(
+            ".sidebar-link[href*=" + entry.target.id + "]"
+          );
+
+          // Add current class to it
+          newMenu.classList.add("active");
         }
       });
     };
